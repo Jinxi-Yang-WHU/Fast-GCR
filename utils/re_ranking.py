@@ -1,21 +1,4 @@
 # encoding: utf-8
-
-"""
-CVPR2017 paper:Zhong Z, Zheng L, Cao D, et al. Re-ranking Person Re-identification with k-reciprocal Encoding[J]. 2017.
-url:http://openaccess.thecvf.com/content_cvpr_2017/papers/Zhong_Re-Ranking_Person_Re-Identification_CVPR_2017_paper.pdf
-Matlab version: https://github.com/zhunzhong07/person-re-ranking
-"""
-
-"""
-API
-
-probFea: all feature vectors of the query set (torch tensor)
-probFea: all feature vectors of the gallery set (torch tensor)
-k1,k2,lambda: parameters, the original paper is (k1=20,k2=6,lambda=0.3)
-MemorySave: set to 'True' when using MemorySave mode
-Minibatch: avaliable when 'MemorySave' is 'True'
-"""
-
 from collections import defaultdict
 import numpy as np
 import torch
