@@ -1,1 +1,1 @@
-# Fast-GCR: Parameter-Free Efficient Re-Ranking without K-nearest Search
+# Cheb-GR: Rethinking k-nearest neighbor search in Re-ranking for Person Re-identification
