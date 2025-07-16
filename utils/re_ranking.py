@@ -75,7 +75,7 @@ def fast_mergesetfeat4(_cfg, X, labels):
     L = torch.outer(D_row, D_col) * S
     global_X = L @ X  # 使用 @ 符号进行矩阵乘法
         
-    X = cross_X 
+    X = global_X
     if _cfg.GCR.MODE != 'no-norm':
         X = X / torch.linalg.norm(X, ord=2, dim=1, keepdims=True)  # 使用 torch.linalg.norm 进行归一化
     if _cfg.COMMON.VERBOSE:
